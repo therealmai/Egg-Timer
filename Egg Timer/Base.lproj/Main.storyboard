@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="NNK-Yq-iPB">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NNK-Yq-iPB">
                                 <rect key="frame" x="10" y="64" width="394" height="778"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqR-aD-QjO" userLabel="Title View">
-                                        <rect key="frame" x="0.0" y="0.0" width="368" height="237.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="368" height="246"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How do you like your eggs?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="UML-Bn-XCn">
                                                 <rect key="frame" x="-7" y="0.0" width="355" height="42"/>
@@ -32,26 +32,24 @@
                                         </subviews>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VX0-pb-zoq">
-                                        <rect key="frame" x="0.0" y="270.5" width="394" height="237"/>
+                                        <rect key="frame" x="0.0" y="266" width="394" height="246"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OHs-ap-weg">
-                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="237"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="246"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soft_egg" translatesAutoresizingMaskIntoConstraints="NO" id="d1Y-bM-e1E">
-                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="366"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="237"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x85-SZ-rOl">
-                                                <rect key="frame" x="134.5" y="0.0" width="125" height="237"/>
+                                                <rect key="frame" x="134.5" y="0.0" width="125" height="246"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium_egg" translatesAutoresizingMaskIntoConstraints="NO" id="Dyn-xi-WEz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="237"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="246"/>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="Dyn-xi-WEz" secondAttribute="bottom" id="4Jh-Cu-RqK"/>
                                                     <constraint firstAttribute="trailing" secondItem="Dyn-xi-WEz" secondAttribute="trailing" id="Hry-WA-B94"/>
@@ -60,10 +58,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FIK-eO-EXs">
-                                                <rect key="frame" x="269.5" y="0.0" width="124.5" height="237"/>
+                                                <rect key="frame" x="269.5" y="0.0" width="124.5" height="246"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hard_egg" translatesAutoresizingMaskIntoConstraints="NO" id="CIT-gc-0D9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="237"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="246"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -77,7 +75,7 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hoh-ej-5kg">
-                                        <rect key="frame" x="0.0" y="540.5" width="240" height="237.5"/>
+                                        <rect key="frame" x="0.0" y="532" width="240" height="246"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
