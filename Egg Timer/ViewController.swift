@@ -22,6 +22,15 @@ class ViewController: UIViewController {
         case "Hard" : print(hardEgg)
         default : print("null")
         }
+//        if (sender.currentTitle == "Soft"){
+//            print(softEgg)
+//        }else if (sender.currentTitle == "Medium"){
+//            print(mediumEgg)
+//        }else if (sender.currentTitle == "Hard"){
+//            print(hardEgg)
+//        }else{
+//            print("nil")
+//        }
     }
     
 }
