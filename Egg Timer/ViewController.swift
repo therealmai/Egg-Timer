@@ -9,31 +9,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let eggTimes:[String:Int] = ["soft": 5, "medium":7, "hard":12];
-    var time = 60;
+    let eggTimes:[String:Int] = ["Soft": 5, "Medium":7, "hard":12];
+    var seconds = 60;
+    var timer = Timer();
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     @IBAction func eggButton(_ sender: UIButton) {
-        switch(sender.currentTitle){
-        case "Soft" : countdown(time: eggTimes["soft"]!)
-        case "Medium" : countdown(time: eggTimes["medium"]!)
-        case "Hard" : countdown(time:eggTimes["hard"]!)
-        default : print("null")
-        }
+        timer.invalidate();
+        seconds = 60;
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true);
+        
+        
+        
     }
     
-    func countdown(time : Int){
-        var seconds = time * 60;
-        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
-            print(seconds);
-            seconds -= 1;
-            if seconds == 0 {
-                timer.invalidate()
-            }
-        }
+    @objc func fireTimer() {
+        
+        print("Timer \(seconds)")
+        seconds -= 1;
     }
+   
     
 
     
