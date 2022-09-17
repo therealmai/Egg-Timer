@@ -9,29 +9,33 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let softEgg = 5;
-    let mediumEgg = 7;
-    let hardEgg = 12;
+    let eggTimes:[String:Int] = ["soft": 5, "medium":7, "hard":12];
+    var time = 60;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     @IBAction func eggButton(_ sender: UIButton) {
         switch(sender.currentTitle){
-        case "Soft" : print(softEgg)
-        case "Medium" : print(mediumEgg)
-        case "Hard" : print(hardEgg)
+        case "Soft" : countdown(time: eggTimes["soft"]!)
+        case "Medium" : countdown(time: eggTimes["medium"]!)
+        case "Hard" : countdown(time:eggTimes["hard"]!)
         default : print("null")
         }
-//        if (sender.currentTitle == "Soft"){
-//            print(softEgg)
-//        }else if (sender.currentTitle == "Medium"){
-//            print(mediumEgg)
-//        }else if (sender.currentTitle == "Hard"){
-//            print(hardEgg)
-//        }else{
-//            print("nil")
-//        }
     }
+    
+    func countdown(time : Int){
+        var seconds = time * 60;
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+            print(seconds);
+            seconds -= 1;
+            if seconds == 0 {
+                timer.invalidate()
+            }
+        }
+    }
+    
+
     
 }
 
