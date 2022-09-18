@@ -9,30 +9,33 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let eggTimes:[String:Int] = ["Soft": 5, "Medium":7, "hard":12];
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    let eggTimes : [String: Int] = ["Soft": 3, "Medium":4, "Hard":7];
     var seconds = 60;
     var timer = Timer();
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
     @IBAction func eggButton(_ sender: UIButton) {
+        
         timer.invalidate();
-        seconds = 60;
+        let hardness = sender.currentTitle!;
+        seconds = eggTimes[hardness]!;
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true);
-        
-        
-        
     }
     
     @objc func fireTimer() {
-        
-        print("Timer \(seconds)")
-        seconds -= 1;
+        if (seconds > 0){
+            print("Timer \(seconds)")
+            seconds -= 1;
+        }else{
+            timer.invalidate();
+            titleLabel.text = "Done"
+        }
     }
-   
-    
-
     
 }
 
