@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             seconds -= 1;
         }else{
             timer.invalidate();
-            titleLabel.text = "Done"
+            titleLabel.text = "Egg Boiled"
         }
     }
     
