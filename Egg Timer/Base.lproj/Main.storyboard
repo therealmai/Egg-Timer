@@ -131,6 +131,12 @@
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hoh-ej-5kg">
                                         <rect key="frame" x="0.0" y="556" width="374" height="258"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PyX-Rw-b7i">
+                                                <rect key="frame" x="112" y="57" width="150" height="4"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </progressView>
+                                        </subviews>
                                     </view>
                                 </subviews>
                                 <constraints>
