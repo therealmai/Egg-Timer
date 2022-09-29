@@ -129,34 +129,17 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hoh-ej-5kg">
+                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hoh-ej-5kg">
                                         <rect key="frame" x="0.0" y="556" width="374" height="258"/>
                                         <subviews>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="PyX-Rw-b7i">
-                                                <rect key="frame" x="0.0" y="127" width="374" height="4"/>
+                                            <progressView opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PyX-Rw-b7i">
+                                                <rect key="frame" x="0.0" y="100" width="374" height="58"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="progressTintColor" red="0.91372549530000002" green="0.61568629740000003" blue="0.2235293984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </progressView>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="PyX-Rw-b7i" firstAttribute="leading" secondItem="Hoh-ej-5kg" secondAttribute="leading" id="Xkp-GS-LWb"/>
-                                            <constraint firstAttribute="trailing" secondItem="PyX-Rw-b7i" secondAttribute="trailing" id="ci7-pT-KCR"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="Hoh-ej-5kg" firstAttribute="top" secondItem="VX0-pb-zoq" secondAttribute="bottom" constant="20" id="1U4-KV-tO3"/>
-                                    <constraint firstItem="VX0-pb-zoq" firstAttribute="top" secondItem="eqR-aD-QjO" secondAttribute="bottom" constant="20" id="4SH-Xe-Iu5"/>
-                                    <constraint firstItem="eqR-aD-QjO" firstAttribute="leading" secondItem="NNK-Yq-iPB" secondAttribute="leading" id="5EH-CU-8We"/>
-                                    <constraint firstAttribute="bottom" secondItem="Hoh-ej-5kg" secondAttribute="bottom" id="7H0-ER-Hah"/>
-                                    <constraint firstAttribute="trailing" secondItem="VX0-pb-zoq" secondAttribute="trailing" id="7bU-mg-uCX"/>
-                                    <constraint firstAttribute="trailing" secondItem="Hoh-ej-5kg" secondAttribute="trailing" id="DUf-PQ-NmF"/>
-                                    <constraint firstItem="VX0-pb-zoq" firstAttribute="leading" secondItem="NNK-Yq-iPB" secondAttribute="leading" id="IoG-sH-kTv"/>
-                                    <constraint firstItem="Hoh-ej-5kg" firstAttribute="leading" secondItem="NNK-Yq-iPB" secondAttribute="leading" id="UlN-WF-f7i"/>
-                                    <constraint firstItem="Hoh-ej-5kg" firstAttribute="top" secondItem="VX0-pb-zoq" secondAttribute="bottom" constant="20" id="ZKu-Kj-jiC"/>
-                                    <constraint firstItem="VX0-pb-zoq" firstAttribute="top" secondItem="eqR-aD-QjO" secondAttribute="bottom" constant="20" id="keV-bC-TaD"/>
-                                    <constraint firstItem="eqR-aD-QjO" firstAttribute="top" secondItem="NNK-Yq-iPB" secondAttribute="top" id="nSU-sX-C5e"/>
-                                    <constraint firstAttribute="trailing" secondItem="eqR-aD-QjO" secondAttribute="trailing" id="p71-B4-KyH"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

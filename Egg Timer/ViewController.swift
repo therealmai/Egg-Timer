@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     
     let eggTimes : [String: Int] = ["Soft": 3, "Medium":4, "Hard":7];
-    var seconds = 60;
+    var totalTime = 0;
+    var secondsPassed = 0;
     var timer = Timer();
     
     override func viewDidLoad() {
@@ -23,17 +24,22 @@ class ViewController: UIViewController {
     @IBAction func eggButton(_ sender: UIButton) {
         
         
-        
+       
+        titleLabel.text = "How do you like your eggs?"
         timer.invalidate();
         let hardness = sender.currentTitle!;
-        seconds = eggTimes[hardness]!;
+        totalTime = eggTimes[hardness]!;
+        titleLabel.text = hardness;
+        progressBar.progress = 0.0;
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true);
     }
     
     @objc func fireTimer() {
-        if (seconds > 0){
-            print("Timer \(seconds)")
-            seconds -= 1;
+        if (secondsPassed < totalTime){
+            secondsPassed += 1;
+            let percentDone = Float(secondsPassed) / Float(totalTime);
+            progressBar.progress = Float(percentDone);
+            print(percentDone);
         }else{
             timer.invalidate();
             titleLabel.text = "Egg Boiled"
